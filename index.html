@@ -1,0 +1,203 @@
+﻿<!DOCTYPE html>
+<html lang="ru">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Мой сайт</title>
+    <style>
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+        }
+
+        body {
+            font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+            background: linear-gradient(135deg, #f5f7fa, #c3cfe2);
+            min-height: 100vh;
+            padding: 20px;
+        }
+
+        #header {
+            display: flex;
+            align-items: center;
+            justify-content: space-between;
+            padding: 20px 30px;
+            background: #fff;
+            border-radius: 15px;
+            box-shadow: 0 4px 15px rgba(0,0,0,0.1);
+            margin-bottom: 30px;
+        }
+
+        .logo-section {
+            display: flex;
+            align-items: center;
+            gap: 15px;
+        }
+
+        .logo-placeholder {
+            width: 60px;
+            height: 60px;
+            background: linear-gradient(135deg, #3498db, #2c3e50);
+            border-radius: 10px;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            color: #fff;
+            font-weight: bold;
+            font-size: 1.2em;
+        }
+
+        .college-name {
+            color: #2c3e50;
+            font-size: 1.8em;
+            font-weight: bold;
+        }
+
+        nav ul {
+            display: flex;
+            list-style: none;
+            gap: 25px;
+        }
+
+            nav ul li a {
+                color: #3498db;
+                text-decoration: none;
+                font-size: 1.1em;
+                transition: color 0.3s ease;
+            }
+
+                nav ul li a:hover {
+                    color: #2c3e50;
+                }
+
+        .image-container {
+            text-align: center;
+            margin-bottom: 30px;
+        }
+
+            .image-container img {
+                max-width: 100%;
+                height: auto;
+                border-radius: 15px;
+                box-shadow: 0 4px 15px rgba(0,0,0,0.2);
+            }
+
+        .info-section {
+            display: grid;
+            grid-template-columns: repeat(auto-fit, minmax(280px, 1fr));
+            gap: 20px;
+            max-width: 1000px;
+            margin: 0 auto;
+        }
+
+        .info-card {
+            background: #fff;
+            border-radius: 15px;
+            padding: 25px;
+            box-shadow: 0 4px 15px rgba(0,0,0,0.1);
+            transition: transform 0.3s ease;
+        }
+
+            .info-card:hover {
+                transform: translateY(-5px);
+            }
+
+            .info-card h3 {
+                color: #3498db;
+                margin-bottom: 10px;
+                font-size: 1.3em;
+            }
+
+            .info-card p {
+                color: #555;
+                line-height: 1.6;
+            }
+
+        footer {
+            text-align: center;
+            padding: 25px 20px;
+            margin-top: 30px;
+            background: #fff;
+            border-radius: 15px;
+            box-shadow: 0 4px 15px rgba(0,0,0,0.1);
+            color: #2c3e50;
+        }
+
+            footer .copyright {
+                font-size: 1.1em;
+                font-weight: 600;
+                margin-bottom: 10px;
+                color: #2c3e50;
+            }
+
+            footer .students {
+                color: #7f8c8d;
+                font-size: 0.95em;
+                line-height: 1.6;
+            }
+    </style>
+</head>
+<body>
+
+    <div id="header">
+        <div class="logo-section">
+            <div class="logo-placeholder">ПГЭК</div>
+            <div class="college-name">ПГЭК</div>
+        </div>
+        <nav>
+            <ul>
+                <li><a href="#home">Главная</a></li>
+                <li><a href="#about">О проекте</a></li>
+                <li><a href="#info">Информация</a></li>
+                <li><a href="#contact">Контакты</a></li>
+            </ul>
+        </nav>
+    </div>
+
+    <!-- Контейнер для картинки -->
+    <div class="image-container">
+        <img src="minionn.jpg" alt="Миньон" width="600">
+    </div>
+
+    <div class="info-section">
+
+        <div class="info-card">
+            <h3>📌 О проекте</h3>
+            <p>Этот сайт создан в рамках учебной задачи. Здесь размещена базовая информация о проекте и его целях.</p>
+        </div>
+
+        <div class="info-card">
+            <h3>Цели</h3>
+            <p>Научиться создавать HTML-страницы, работать с изображениями, текстом и стилями CSS.</p>
+        </div>
+
+        <div class="info-card">
+            <h3>Технологии</h3>
+            <p>HTML5, CSS3 — основные технологии, использованные при создании данной страницы.</p>
+        </div>
+
+        <div class="info-card">
+            <h3>👤 Автор</h3>
+            <p>Задача разработана Анастасией Бабахиной. Страница выполнена студентом.</p>
+        </div>
+
+        <div class="info-card">
+            <h3>📅 Дата</h3>
+            <p>Страница создана 23 октября 2026 года. Все материалы актуальны на момент публикации.</p>
+        </div>
+
+        <div class="info-card">
+            <h3>💡 Интересный факт</h3>
+            <p>HTML расшифровывается как HyperText Markup Language — язык гипертекстовой разметки.</p>
+        </div>
+
+    </div>
+
+    <footer>
+        <p class="copyright">© 2026 Разработано студентами группы П33</p>
+        <p class="students">Кралько П. • Матюш Е. • Мясникова Д. • Рабец М. • Морозёнок Е.</p>
+    </footer>
+
+</body>
+</html>
