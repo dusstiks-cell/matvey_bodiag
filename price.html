@@ -3,32 +3,36 @@
 <head>
     <meta charset="utf-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Прайс-лист мерча</title>
+    <title>Мерч и Проект</title>
     <style>
+        /* --- Стили для всей страницы --- */
         body {
             font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
             background-color: #f4f4f9;
             margin: 0;
             padding: 20px;
-        }
-
-        h1 {
-            text-align: center;
             color: #333;
         }
 
+        h1, h2 {
+            text-align: center;
+            color: #222;
+        }
+
+        /* --- Стили для карточек мерча (Задача 13) --- */
         .merch-container {
             display: flex;
             justify-content: center;
             gap: 20px;
             flex-wrap: wrap;
+            margin-bottom: 40px;
         }
 
         .merch-card {
             background: white;
             border-radius: 10px;
             box-shadow: 0 4px 8px rgba(0,0,0,0.1);
-            width: 300px;
+            width: 280px;
             padding: 15px;
             text-align: center;
             transition: transform 0.2s;
@@ -37,11 +41,11 @@
             .merch-card:hover {
                 transform: translateY(-5px);
             }
-            /* Стили для картинок, чтобы они были ровными */
+
             .merch-card img {
                 width: 100%;
                 height: 200px;
-                object-fit: cover; /* Обрезает картинку, чтобы она заполнила блок без искажений */
+                object-fit: cover;
                 border-radius: 8px;
                 background-color: #eee;
             }
@@ -66,38 +70,93 @@
             font-weight: bold;
             color: #e63946;
         }
+
+        /* --- Стили для блока проекта (Задача 11) --- */
+        .project-info {
+            background: white;
+            max-width: 800px;
+            margin: 0 auto;
+            padding: 30px;
+            border-radius: 10px;
+            box-shadow: 0 4px 8px rgba(0,0,0,0.1);
+            text-align: center;
+        }
+
+            .project-info p {
+                line-height: 1.6;
+                font-size: 1.1em;
+            }
+
+        .download-btn {
+            display: inline-block;
+            margin-top: 20px;
+            padding: 12px 24px;
+            background-color: #4CAF50;
+            color: white;
+            text-decoration: none;
+            border-radius: 5px;
+            font-weight: bold;
+            transition: background-color 0.2s;
+        }
+
+            .download-btn:hover {
+                background-color: #45a049;
+            }
     </style>
 </head>
 <body>
 
+    <!-- ЗАДАЧА 13: Прайс-лист -->
     <h1>Наш Мерч</h1>
 
     <div class="merch-container">
 
-        <!-- Карточка 1: Футболка -->
+        <!-- Товар 1 (Изменена цена) -->
         <div class="merch-card">
-            <img src="https://images.unsplash.com/photo-1521572163474-6864f9cf17ab?ixlib=rb-4.0.3&auto=format&fit=crop&w=800&q=80" alt="Белая футболка">
+            <img src="https://images.unsplash.com/photo-1521572163474-6864f9cf17ab?ixlib=rb-4.0.3&auto=format&fit=crop&w=800&q=80" alt="Футболка">
             <div class="merch-title">Футболка "Классика"</div>
             <div class="merch-desc">Хлопковая футболка высокого качества. Универсальный размер, отличный принт, который не стирается.</div>
-            <div class="merch-price">1 500 руб.</div>
+            <div class="merch-price">1 800 руб.</div>
         </div>
 
-        <!-- Карточка 2: Кружка -->
+        <!-- Товар 2 (Изменена цена) -->
         <div class="merch-card">
-            <img src="https://images.unsplash.com/photo-1514228742587-6b1558fcca3d?ixlib=rb-4.0.3&auto=format&fit=crop&w=800&q=80" alt="Керамическая кружка">
+            <img src="https://images.unsplash.com/photo-1514228742587-6b1558fcca3d?ixlib=rb-4.0.3&auto=format&fit=crop&w=800&q=80" alt="Кружка">
             <div class="merch-title">Кружка керамическая</div>
             <div class="merch-desc">Объем 350 мл. Идеально подходит для утреннего кофе или чая. Можно мыть в посудомоечной машине.</div>
-            <div class="merch-price">700 руб.</div>
+            <div class="merch-price">850 руб.</div>
         </div>
 
-        <!-- Карточка 3: Худи -->
+        <!-- Товар 3 (Изменена цена) -->
         <div class="merch-card">
-            <img src="https://images.unsplash.com/photo-1556821840-3a63f95609a7?ixlib=rb-4.0.3&auto=format&fit=crop&w=800&q=80" alt="Серое худи">
+            <img src="https://images.unsplash.com/photo-1556821840-3a63f95609a7?ixlib=rb-4.0.3&auto=format&fit=crop&w=800&q=80" alt="Худи">
             <div class="merch-title">Худи с капюшоном</div>
             <div class="merch-desc">Теплое и мягкое худи. Отличный выбор для прохладной погоды. Свободный крой.</div>
-            <div class="merch-price">2 800 руб.</div>
+            <div class="merch-price">3 200 руб.</div>
         </div>
 
+        <!-- Товар 4 (НОВЫЙ МЕРЧ) -->
+        <div class="merch-card">
+            <img src="https://images.unsplash.com/photo-1588850561407-ed78c282e89b?ixlib=rb-4.0.3&auto=format&fit=crop&w=800&q=80" alt="Кепка">
+            <div class="merch-title">Кепка бейсболка</div>
+            <div class="merch-desc">Стильная кепка с вышитым логотипом. Регулируемый размер. Защитит от солнца летом.</div>
+            <div class="merch-price">1 200 руб.</div>
+        </div>
+
+    </div>
+
+    <hr style="margin: 40px 0; border: 0; border-top: 1px solid #ccc;">
+
+    <!-- ЗАДАЧА 11: Информация о проекте и презентация -->
+    <div class="project-info">
+        <h2>О нашем проекте</h2>
+        <p>Наш проект направлен на создание качественного и стильного мерча для студентов и сотрудников. Мы используем только экологичные материалы и современные методы печати.</p>
+        <p><strong>Обновление ассортимента:</strong> Мы рады сообщить о добавлении новой кепки в нашу коллекцию! Теперь вы можете приобрести полный образ.</p>
+
+        <p>Ознакомиться с полной концепцией проекта и планами на будущее вы можете в нашей презентации:</p>
+
+        <!-- Ссылка на скачивание. Обратите внимание: файл presentation.pdf должен лежать рядом с этим html -->
+        <a href="presentation.pdf" download class="download-btn">📥 Скачать презентацию проекта (PDF)</a>
     </div>
 
 </body>
