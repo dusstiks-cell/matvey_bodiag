@@ -1,5 +1,5 @@
 ﻿<!DOCTYPE html>
-<html lang="en" xmlns="http://www.w3.org/1999/xhtml">
+<html lang="ru" xmlns="http://www.w3.org/1999/xhtml">
 <head>
     <meta charset="utf-8" />
     <title>О разработчиках</title>
@@ -14,7 +14,31 @@
         h1 {
             text-align: center;
             color: #333;
+            margin-bottom: 30px;
         }
+
+        /* Стили для нового блока о колледже */
+        #about {
+            background-color: #fff;
+            border-radius: 10px;
+            box-shadow: 0 2px 8px rgba(0, 0, 0, 0.15);
+            padding: 25px;
+            max-width: 800px;
+            margin: 0 auto 40px auto;
+            text-align: center;
+        }
+
+            #about h2 {
+                color: #2c3e50;
+                margin-bottom: 15px;
+                font-size: 24px;
+            }
+
+            #about p {
+                color: #555;
+                line-height: 1.6;
+                font-size: 16px;
+            }
 
         .developers {
             display: flex;
@@ -55,6 +79,16 @@
 <body>
     <h1>Информация о разработчиках</h1>
 
+    <!-- Блок с информацией о колледже -->
+    <div id="about">
+        <h2>О нашем колледже</h2>
+        <p>
+            <strong>Пермский государственный экономический колледж (ПГЭК)</strong> — это современное учебное заведение с богатой историей и многолетними традициями качественного образования.
+            Колледж успешно готовит высококвалифицированных специалистов в области экономики, информационных технологий, права и сервиса.
+            Мы гордимся тем, что получили здесь не только фундаментальные теоретические знания, но и ценные практические навыки, необходимые для построения успешной карьеры.
+        </p>
+    </div>
+
     <div class="developers">
 
         <!-- Разработчик 1 -->
@@ -68,7 +102,7 @@
         <div class="developer-card">
             <img src="2.jpg" alt="Фото 2" />
             <h2>Полина Кралько Алексеевна</h2>
-            <p>Возраст: 18 год</p>
+            <p>Возраст: 18 лет</p>
         </div>
 
         <!-- Разработчик 3 -->
@@ -82,7 +116,7 @@
         <div class="developer-card">
             <img src="4.jpg" alt="Фото 4" />
             <h2>Мария Рабец Леонидовна</h2>
-            <p>Возраст: 17 года</p>
+            <p>Возраст: 17 лет</p>
         </div>
 
         <!-- Разработчик 5 -->
