@@ -35,6 +35,8 @@
             box-sizing: border-box;
             transition: transform 0.2s;
             border-top: 5px solid #007bff; /* Синяя полоска сверху для красоты */
+            display: flex;
+            flex-direction: column;
         }
 
             .project-card:hover {
@@ -60,7 +62,26 @@
             font-size: 1em;
             line-height: 1.5;
             color: #444;
+            flex-grow: 1; /* Чтобы кнопка всегда была прижата к низу */
         }
+
+        /* Новые стили для кнопки скачивания */
+        .download-btn {
+            display: inline-block;
+            margin-top: 20px;
+            padding: 10px 15px;
+            background-color: #28a745;
+            color: white;
+            text-decoration: none;
+            border-radius: 5px;
+            text-align: center;
+            font-weight: bold;
+            transition: background-color 0.2s;
+        }
+
+            .download-btn:hover {
+                background-color: #218838;
+            }
     </style>
 </head>
 <body>
@@ -94,6 +115,17 @@
             <div class="project-desc">
                 Чат-бот, который помогает студентам следить за расписанием занятий и получать уведомления о дедлайнах. Написан на языке Python с использованием библиотеки aiogram.
             </div>
+        </div>
+
+        <!-- Проект 4 (НОВЫЙ) -->
+        <div class="project-card">
+            <h2 class="project-title">Мобильное приложение "ЭкоМир"</h2>
+            <div class="project-author">Разработчик: Бабахина Анастасия</div>
+            <div class="project-desc">
+                Приложение для отслеживания экологического следа пользователя. Помогает сортировать отходы и находить ближайшие пункты переработки.
+            </div>
+            <!-- Ссылка на скачивание. Замените presentation.pdf на имя вашего файла -->
+            <a href="presentation.pdf" class="download-btn" download>Скачать презентацию</a>
         </div>
 
     </div>
