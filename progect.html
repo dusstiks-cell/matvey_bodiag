@@ -1,0 +1,102 @@
+﻿<!DOCTYPE html>
+<html lang="ru">
+<head>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Проекты разработчиков</title>
+    <style>
+        body {
+            font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+            background-color: #f4f4f9;
+            margin: 0;
+            padding: 20px;
+            color: #333;
+        }
+
+        h1 {
+            text-align: center;
+            color: #222;
+            margin-bottom: 30px;
+        }
+
+        .projects-container {
+            display: flex;
+            justify-content: center;
+            gap: 20px;
+            flex-wrap: wrap;
+        }
+
+        .project-card {
+            background: white;
+            border-radius: 10px;
+            box-shadow: 0 4px 8px rgba(0,0,0,0.1);
+            width: 320px;
+            padding: 20px;
+            box-sizing: border-box;
+            transition: transform 0.2s;
+            border-top: 5px solid #007bff; /* Синяя полоска сверху для красоты */
+        }
+
+            .project-card:hover {
+                transform: translateY(-5px);
+            }
+
+        .project-title {
+            font-size: 1.3em;
+            font-weight: bold;
+            margin-top: 0;
+            margin-bottom: 10px;
+            color: #007bff;
+        }
+
+        .project-author {
+            font-size: 0.9em;
+            color: #888;
+            margin-bottom: 15px;
+            font-style: italic;
+        }
+
+        .project-desc {
+            font-size: 1em;
+            line-height: 1.5;
+            color: #444;
+        }
+    </style>
+</head>
+<body>
+
+    <h1>Проекты наших разработчиков</h1>
+
+    <div class="projects-container">
+
+        <!-- Проект 1 -->
+        <div class="project-card">
+            <h2 class="project-title">Умный домофон</h2>
+            <div class="project-author">Разработчик: Иванов Иван</div>
+            <div class="project-desc">
+                Проект представляет собой систему контроля доступа на базе микрокомпьютера Raspberry Pi. Позволяет открывать дверь со смартфона и распознавать лица гостей.
+            </div>
+        </div>
+
+        <!-- Проект 2 -->
+        <div class="project-card">
+            <h2 class="project-title">Сайт-портфолио</h2>
+            <div class="project-author">Разработчик: Петрова Анна</div>
+            <div class="project-desc">
+                Интерактивный одностраничный сайт для демонстрации фотографий и графических работ. Написан на чистом HTML, CSS и JavaScript с использованием анимаций.
+            </div>
+        </div>
+
+        <!-- Проект 3 -->
+        <div class="project-card">
+            <h2 class="project-title">Бот для Telegram</h2>
+            <div class="project-author">Разработчик: Сидоров Алексей</div>
+            <div class="project-desc">
+                Чат-бот, который помогает студентам следить за расписанием занятий и получать уведомления о дедлайнах. Написан на языке Python с использованием библиотеки aiogram.
+            </div>
+        </div>
+
+    </div>
+
+</body>
+</html>
